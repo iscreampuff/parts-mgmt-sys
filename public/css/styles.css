@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-family: "sohne", sans-serif;
+}
+
+#role0 {
+  width: 15%;
+  padding-right: 7px;
+  padding-left: 9px;
+  border-radius: 5px;
+}
+
+#role1 {
+  width: 83%;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-signin {
+  max-width: 370px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+label {
+  color: rgba(155, 155, 155, .7);
+}

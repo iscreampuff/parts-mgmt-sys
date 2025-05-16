@@ -1,0 +1,114 @@
+/* Navbar */
+.navbar-nav .nav-link {
+    cursor: pointer;
+}
+
+.navbar-brand {
+    cursor: default;
+}
+
+.navbar-brand {
+    margin-left: 1.2%;
+}
+
+.navbar-nav .nav-item {
+    padding: 0.4rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.navbar, .container, .parent-class {
+  overflow: visible !important;
+}
+
+.navbar-brand {
+  font-family: 'Microsoft YaHei', 'SimSun', 'Noto Sans SC', Arial, sans-serif;
+  font-size: 19px; /* Adjust font size as needed */
+}
+
+/* Home */
+.custom-align {
+    text-align: left;
+}
+
+.relative-pos {
+    position: relative;
+    left: -3pt;
+}
+
+.custom-div {
+    width: 100%; /* Full width by default */
+    max-width: 520px; /* Limit maximum width */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 1.5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-div {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .add {
+        margin-left: 10px;
+    }
+
+    .relative-pos {
+        position: relative;
+        left: -1.5pt;
+    }
+
+    .navbar-brand {
+        margin-left: 3%;
+    }
+}
+
+#homepage p {
+  font-family: 'Arial', sans-serif; /* Replace 'Arial' with the desired font */
+  font-size: 18px; /* Adjust font size */
+  line-height: 1.6; /* Optional: Better line spacing */
+  color: #333; /* Optional: Text color */
+}
+
+/* About me */
+.custom-super-pg {
+    margin-bottom: 0.8rem;
+}
+
+.custom-pg {
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+}
+
+.custom-ul {
+    padding-left: 1.1rem;
+}
+
+.custom-ul li {
+    margin-bottom: 6px;
+}
+
+.custom-last {
+    margin-bottom: 2.5em;
+}
+
+/* Projects */
+#projects #unique {
+    padding-bottom: 0.8rem;
+}
+
+.custom-align {
+    margin-bottom: 1.5rem;
+}
+
+/* Contact */
+.row.g-5 {
+    display: flex;
+    justify-content: center;
+}
