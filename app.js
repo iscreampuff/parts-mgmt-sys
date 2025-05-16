@@ -173,13 +173,15 @@ app.post('/signup', async (req, res) => {
         console.error(err);
         res.sendFile(__dirname + "/views/status/error.html");
       } else {
-        if (results.serverStatus == 2) {
-          console.log('Registration successful!');
-          res.sendFile(__dirname + "/views/status/success.html");
-        } else {
-          console.log(results);
-          res.sendFile(__dirname + "/views/status/error.html");
-        }
+        // if (results.serverStatus == 2) {
+        //   console.log('Registration successful!');
+        //   res.sendFile(__dirname + "/views/status/success.html");
+        // } else {
+        //   console.log(results);
+        //   res.sendFile(__dirname + "/views/status/error.html");
+        // }
+        console.log('Registration successful!', results);
+        res.sendFile(__dirname + "/views/status/success.html");
       }
     }
   );
