@@ -136,17 +136,25 @@ app.post('/', (req, res) => {
 
       console.log(user.UserID + " " + user.Username + " " + user.Role);
 
-      if (user.Role === 'admin') {
-        res.redirect('/admin');
-      } else if (user.Role === 'purchasing_agent') {
-        res.redirect('/purchasing-agent');
-      } else if (user.Role === 'suppliers_agent') {
-        res.redirect('/suppliers-agent');
-      } else if (user.Role === 'employee') {
-        res.redirect('/employee');
-      } else {
-        res.send('How did you get in here?');
-      }
+      req.session.save((err) => {
+        if (err) {
+          console.error("Session save error:", err);
+          return res.status(500).send("Server error");
+        }
+
+        // Redirect after session is confirmed saved
+        if (user.Role === 'admin') {
+          res.redirect('/admin');
+        } else if (user.Role === 'purchasing_agent') {
+          res.redirect('/purchasing-agent');
+        } else if (user.Role === 'suppliers_agent') {
+          res.redirect('/suppliers-agent');
+        } else if (user.Role === 'employee') {
+          res.redirect('/employee');
+        } else {
+          res.send('How did you get in here?');
+        }
+      });
     }
   );
 });
