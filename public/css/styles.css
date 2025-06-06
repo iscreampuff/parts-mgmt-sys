@@ -58,3 +58,7 @@ h1 {
 label {
   color: rgba(155, 155, 155, .7);
 }
+
+select {
+  color: white;
+}
