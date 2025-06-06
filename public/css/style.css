@@ -28,6 +28,40 @@
   font-size: 19px; /* Adjust font size as needed */
 }
 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* 1. Increase navbar height */
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  /* 2. Add space to the right of the hamburger button */
+  .navbar-toggler {
+    margin-right: 15px !important; /* Adjust spacing */
+  }
+
+  /* 3. Align list items properly in collapsed menu */
+  #navbarsExample04 {
+    padding-top: 8px;
+  }
+
+  .a {
+    margin-left: 0px !important;
+    padding-left: 7px !important;
+  }
+
+  .b {
+    margin-top: 10px !important;
+    padding-left: 5px !important;
+  }
+
+  .dropdown-menu {
+    width: 100% !important; /* Full width */
+    margin-top: 15px !important;
+  }
+}
+
 /* Home */
 .custom-align {
     text-align: left;
@@ -51,7 +85,7 @@
 
 @media (max-width: 576px) {
     .custom-div {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 97%; /* Adjust width for smaller screens */
     }
 
     .add {
@@ -75,7 +109,11 @@
   color: #333; /* Optional: Text color */
 }
 
-/* About me */
+/* About us */
+#mod {
+  margin-left: -3px;
+}
+
 .custom-super-pg {
     margin-bottom: 0.8rem;
 }
@@ -96,6 +134,12 @@
 
 .custom-last {
     margin-bottom: 2.5em;
+}
+
+@media (max-width: 576px) {
+    .custom-pg {
+        width: 97%; /* Adjust width for smaller screens */
+    }
 }
 
 /* Projects */
