@@ -26,12 +26,14 @@ app.use(bodyParser.urlencoded({
 
 // MySQL Session Store Setup
 const sessionStore = new MySQLStore({
-  host: process.env.DB_HOST || 'db4free.net',
-  user: process.env.DB_USER || 'hakkai_sys',
-  password: process.env.DB_PASSWORD || 'hakkai_k0nz3n',
-  database: process.env.DB_NAME || 'parts_system',
+  createPool: true,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
   clearExpired: true,          // Optional: auto-clean expired sessions
   checkExpirationInterval: 900000, // 15 mins (optional)
+  pool: pool
 });
 
 // Session Middleware
